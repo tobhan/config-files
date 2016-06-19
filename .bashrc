@@ -29,3 +29,5 @@ test -s ~/.alias && . ~/.alias || true
 # Changes tmux to allow the use of different colors.
 # This is done so that vim can use more colorspaces in tmux.
 alias tmux="tmux -2"
+# An alias to quickly ask opendns what my external ip is.
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com" 
