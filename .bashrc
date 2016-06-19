@@ -26,4 +26,6 @@
 #export PILOTRATE=115200
 
 test -s ~/.alias && . ~/.alias || true
+# Changes tmux to allow the use of different colors.
+# This is done so that vim can use more colorspaces in tmux.
 alias tmux="tmux -2"
