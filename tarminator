@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -z `find $PWD -maxdepth 1 -type f -name "*.bz2"` ];
+  then
+	echo "Didn't find any files"
+	echo "Are there any bzip2 files?"
+elif [ -n `find $PWD -maxdepth 1 -type f -name "*.bz2"` ];
+  then
+	for i in `find $PWD -maxdepth 1 -type f -name "*.bz2"`; do
+		tar -jvxf $i
+	done
+fi	
